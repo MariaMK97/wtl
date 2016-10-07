@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fisrt eg</title>
+	<script type="text/javascript">
+		var today=new Date();
+		document.write("<b>Today's date is:</b>"+today);
+		document.write("<br><b>Today's day is:</b>"+today.getDate());
+		document.write("<br><b>Today's Month is:</b>"+(parseInt(today.getMonth())+1));
+		document.write("<br><b>Today's year is:</b>"+today.getFullYear());
+		var num1=5.56;
+		document.write("<br><b>Number 1 is:</b>"+num1);
+		document.write("<br><b>Rounding Up Number 1 is: </b>"+Math.ceil(num1));
+		document.write("<br><b>Rounding down Number 1 is: </b>"+Math.floor(num1));
+		function sayHello(btn){
+			var e1=document.getElementById('Myname');
+			var name=e1.value;
+			alert("Hello"+name);
+			btn.textContent="You just Clicked Me!";
+			var data=prompt("Please enter any data: ");
+			document.write("U juz entrd \""+data+"\" in prompt");
+		}
+	</script>
+</head>
+<body><br>
+<input type="text" name="usrnm" required="required" id="Myname">
+<button onclick="sayHello(this)">Click Me :)</button>
+</body>
+</html>

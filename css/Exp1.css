@@ -1,0 +1,15 @@
+
+body{
+    font-size: 20px;
+    background-color: lightpink;
+    display: block;
+}
+h1{
+    color :crimson;
+}
+.form-input{
+    display: block;
+}
+#male,#female{
+    display: inline;
+}
